@@ -1,6 +1,8 @@
-import streamlit as st
-install scikit-learn
 scikit-learn
+git add requirements.txt
+git commit -m "Added scikit-learn to requirements"
+git push origin main  # or your current branch
+import streamlit as st
 import numpy as np
 import pandas as pd
 import time
