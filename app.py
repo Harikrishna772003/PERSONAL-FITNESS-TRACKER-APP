@@ -40,8 +40,8 @@ st.header("Your Parameters")
 st.write(df)
 
 # Load data
-calories = pd.read_csv("calories.csv")
-exercise = pd.read_csv("exercise.csv")
+calories = pd.read_csv("/content/calories.csv")
+exercise = pd.read_csv("/content/exercise.csv")
 
 # Merge datasets
 exercise_df = exercise.merge(calories, on="User_ID").drop(columns=["User_ID"])
