@@ -2,6 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import time
+from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 
 import warnings
@@ -39,8 +40,8 @@ st.header("Your Parameters")
 st.write(df)
 
 # Load data
-calories = pd.read_csv("/content/calories.csv")
-exercise = pd.read_csv("/content/exercise.csv")
+calories = pd.read_csv("calories.csv")
+exercise = pd.read_csv("exercise.csv")
 
 # Merge datasets
 exercise_df = exercise.merge(calories, on="User_ID").drop(columns=["User_ID"])
