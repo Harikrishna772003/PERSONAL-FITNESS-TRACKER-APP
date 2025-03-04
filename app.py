@@ -2,7 +2,6 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import time
-from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 
 import warnings
